@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Solution {
+    public int maximumProduct(int[] nums) {
+
+        List<Integer> list = new ArrayList<>();
+
+        for (int num : nums) {
+            list.add(num);
+        }
+
+        Collections.sort(list);
+
+        int n = list.size();
+
+        int product1 = list.get(n - 1) * list.get(n - 2) * list.get(n - 3);
+        int product2 = list.get(0) * list.get(1) * list.get(n - 1);
+
+        return Math.max(product1, product2);
+    }
+}
