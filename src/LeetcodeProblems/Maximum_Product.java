@@ -25,6 +25,6 @@ public class Maximum_Product {
 //        }
 //    }
 public static void main(String[] args) {
-
+    System.out.println("hello ");
 }
 }
